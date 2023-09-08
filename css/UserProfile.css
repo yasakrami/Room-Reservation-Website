@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+   background-color: #f3f3f3;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  width: 35%;
+  background-image: url(img/test.jpg);
+background-size: cover;
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper .left h1{
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+
+.wrapper .left h2{
+    margin-top: 40px;
+  font-size:20px;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info_data {
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.wrapper .right .info_data{
+  
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .email .address .birth .phone{
+  width: 45%;
+}
+
+
+.wrapper .right .info_data h4{
+    color: #353c4e;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.wrapper .right .info_data .email p,
+.wrapper .right .birth p,
+.wrapper .right .phone p,
+.wrapper .right .address p{
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #919aa3;
+
+}
+
+
+.wrapper .right .info_data .firstrow {
+    margin-top: 20px;
+    width: 90%;
+    height: 30%;
+    padding: 20px;
+    background-color: #e0fbfc;
+}
+.wrapper .right .info_data .secondrow{
+  margin-top: 20px;
+  width: 90%;
+  height: 30%;
+  padding: 20px;
+  background-color:#e0fbfc;
+}
+.info_data{
+  margin-right: 20px;
+}

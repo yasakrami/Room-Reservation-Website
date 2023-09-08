@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #3d5a80;
+    border-radius: .5rem;
+}
+
+section{
+    padding:20px;
+}
+
+.heading{
+    font-size: 4rem;
+    color: #3d5a80;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin: auto;
+    padding: 1rem 3rem;
+    background: #3d5a80;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #48cae4;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    
+}
+
+.header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+
+}
+
+.header .logo i{
+    text-align: center;
+    color: #3d5a80;
+    padding-right: .5rem;
+}
+
+.available form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #98c1d9;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top:50px;
+}
+
+
+.available form .box{
+    flex: 1 1 20rem;
+}
+
+.available form .box p{
+    font-size: 2rem;
+    color: #3d5a80;
+}
+
+.available form .box .input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+
+.room h1{
+    font-size: 60px;
+
+}
+
+.room .wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #98c1d9;
+    padding: 10px;
+}
+
+.room .slide{
+
+    background: white;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+.room .slide2{
+    
+    background: white;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+
+.room .slide .image ,
+.room .slide2 .image{
+    
+    
+    overflow: hidden;
+    
+}
+
+.room .slide .image img,
+.room .slide2 .image img{
+    width: 50%;
+    border-radius: .5rem;
+    
+}
+
+
+
+.room .slide .content,
+.room .slide2 .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.room .slide .content h3,
+.room .slide2 .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+
+[for="heart"] {
+    color: #aab8c2;
+    cursor: pointer;
+    font-size: 3em;
+    align-self: center;  
+    transition: color 0.2s ease-in-out;
+  }
+  
+  [for="heart"]:hover {
+    color: grey;
+  }
+  
+  [for="heart"]::selection {
+    color: none;
+    background: transparent;
+  }
+  [id="heart"]:checked + label {
+    color: #e2264d;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+  }
+  
+
+
+  [for="heart"]::moz-selection {
+    color: none;
+    background: transparent;
+  }
+  
+ 
+  [for="heart1"] {
+    color: #aab8c2;
+    cursor: pointer;
+    font-size: 3em;
+    align-self: center;  
+    transition: color 0.2s ease-in-out;
+  }
+  
+  [for="heart1"]:hover {
+    color: grey;
+  }
+  
+  [for="heart1"]::selection {
+    color: none;
+    background: transparent;
+  }
+  
+  [for="heart1"]::moz-selection {
+    color: none;
+    background: transparent;
+  }
+  
+  [id="heart1"]:checked + label {
+    color: #e2264d;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+  }
+  
+
+  [for="heart2"] {
+    color: #aab8c2;
+    cursor: pointer;
+    font-size: 3em;
+    align-self: center;  
+    transition: color 0.2s ease-in-out;
+  }
+  
+  [for="heart2"]:hover {
+    color: grey;
+  }
+  
+  [for="heart2"]::selection {
+    color: none;
+    background: transparent;
+  }
+  
+  [for="heart2"]::moz-selection {
+    color: none;
+    background: transparent;
+  }
+  
+  [id="heart2"]:checked + label {
+    color: #e2264d;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+  }
+  
+
+  [for="heart3"] {
+    color: #aab8c2;
+    cursor: pointer;
+    font-size: 3em;
+    align-self: center;  
+    transition: color 0.2s ease-in-out;
+  }
+  
+  [for="heart3"]:hover {
+    color: grey;
+  }
+  
+  [for="heart3"]::selection {
+    color: none;
+    background: transparent;
+  }
+  
+  [for="heart3"]::moz-selection {
+    color: none;
+    background: transparent;
+  }
+  
+  [id="heart3"]:checked + label {
+    color: #e2264d;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+  }
+  
+  
+  @keyframes heart {0%, 17.5% {font-size: 0;}}
+  
+
+.room .slide .content p,
+.room .slide2 .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+.room .slide .content .stars,
+.room .slide2 .content .stars{
+    padding: 1rem 0;
+}
+
+.room .slide .content .stars i,
+.room .slide2 .content .stars i{
+    font-size: 1.7rem;
+    color: #3d5a80;
+}
+
+
+.review{
+    background-image: url("images/review.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 48rem;
+    position: relative;
+    margin: 4rem 0;
+
+}
+
+.review .review-slide{
+    background: #98c1d9;
+    padding: 2rem;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-top: 6%;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 20%;
+}
+
+.review .slide{
+    text-align: center;
+}
+
+.review .slide .heading{
+    color: white;
+}
+
+.review .slide i{
+    font-size: 6rem;
+    color: #3d5a80;
+}
+.review .slide text{
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    align-items: center;
+    color: white;}
+
+.review .slide .btn2{
+    display: inline-block;
+    margin: auto;
+    padding: 1rem 3rem;
+    background: #3d5a80;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+.footer{
+    background: #98c1d9;
+    margin-bottom: 0;
+}
+
+.footer .box-container{
+    gap: 2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1.1rem 0;
+    color: #3d5a80;
+    
+}
+
+.footer .box-container .box a{
+    display: inline-flex;
+    align-content: center;
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    align-items: center;
+}
+
+.footer .box-container .box a i{
+    
+    display: inline-flex;
+    margin-left: 20px;
+    color: #3d5a80;
+    padding-right: .5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .box-container .box a:hover{
+    color: #3d5a80;
+}
+
+.footer .share{
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a{
+    align-items: center;
+    color: #3d5a80;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid #3d5a80;
+    
+}
+
+.footer .share a:hover{
+    color: white;
+    background: #3d5a80;
+    transform: rotate(360deg);
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem 3rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header {
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.1);
+        background: white;
+        border-radius: .5rem;
+    }
+
+    .header active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content{
+        width: 50rem;
+    }
+
+    .review .review-slide{
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .slide .content{
+        width: 30rem;
+    }
+
+    .home .slide .content h3{
+        font-size: 3rem;
+    }
+
+}

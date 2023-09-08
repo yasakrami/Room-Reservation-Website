@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  background-color: #3d5a80;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+@keyframes zigzag3 {
+  0%,
+  100% {
+    transform: translateX(50px);
+  }
+
+  50% {
+    transform: translateX(100px) scale(0.8);
+  }
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  bottom: 2%;
+  width: 80px;
+  height: 80px;
+  background-image: url(img/home.png);
+  animation: zigzag3 3s linear infinite;
+}
+.test{
+  content: "";
+  position: absolute;
+  right: 8%;
+  bottom: 2%;
+  width: 80px;
+  height: 80px;
+  animation: zigzag3 3s linear infinite;
+
+}
+@keyframes zigzag {
+  0%,
+  100% {
+    transform: translateY(50px);
+  }
+
+  50% {
+    transform: translateY(100px) scale(0.8);
+  }
+}
+
+.container {
+  width: 90%;
+  height: 85vh;
+  background: #eee;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.container .navigationbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 25px;
+  margin-top: 1em;
+}
+
+.container .navigationbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.container .navigationbar .logo img {
+  animation: swing 11s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(7deg);
+  }
+  20% {
+    transform: rotate(-7deg);
+  }
+  30% {
+    transform: rotate(7deg);
+  }
+  40% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  60% {
+    transform: rotate(-7deg);
+  }
+  70% {
+    transform: rotate(7deg);
+  }
+  80% {
+    transform: rotate(-7deg);
+  }
+  90% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.container .navigationbar .logo .logoname {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  margin-left: 0.5em;
+  color: #000;
+}
+
+.searchbox {
+  position: relative;
+}
+
+.searchbox input {
+  padding: 8px 120px 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.searchbox input:focus {
+  padding: 8px 250px 8px 20px;
+}
+
+.searchbox .fa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.container .navigationbar .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.item .icons {
+  position: relative;
+  right: 1em;
+}
+
+.item .icons ul li {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 12px;
+}
+
+.item .icons ul li .fa {
+  padding: 5px;
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.item .icons ul li .fa:hover {
+  transform: scale(1.2) rotate(360deg);
+  color: #3d5a80;
+  background: transparent;
+}
+
+.item .account {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.item .account img {
+  border-radius: 50%;
+}
+
+.item .account .name {
+  text-transform: capitalize;
+  margin: 0 8px;
+  font-weight: 700;
+}
+
+.item .account .username {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  font-size: 12px;
+  color: #000;
+}
+
+.con-body {
+  display: grid;
+  grid-template-columns: 18% auto;
+}
+
+.con-body .sidebar {
+  margin: 20px 0 20px 20px;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.con-body .sidebar ul li {
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+
+.con-body .sidebar ul li:hover {
+  background: #00004d;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.con-body .sidebar ul li a {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.con-body .sidebar ul li:hover a {
+  color: #fff;
+}
+
+
+
+.con-body .sidebar ul a {
+  color: #fff;
+}
+
+.con-body .sidebar ul li .fa {
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.con-body .main-body .headtittle {
+  padding: 15px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.con-body .main-body .headtittle span {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+.con-body .main-body .headtittle h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.con-body .main-body .menu {
+  display: grid;
+  grid-template-rows: 180px 140px;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.con-body .main-body .menu .row {
+  display: grid;
+  grid-template-columns: 30% 50% auto;
+  grid-gap: 20px;
+}
+
+.con-body .main-body .menu {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.con-body .main-body .menu .row .col {
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.con-body .main-body .menu .row .col .titling {
+  font-size: 22px;
+  padding: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.reserve h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.reserve img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.roomsearch img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.last img{
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite</title>
+    
+
+    <link rel="stylesheet" href="favorite.css" />
+  </head>
+  <body>
+
+
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i>  ●YAYHotels </a>
+
+      <nav class="navbar">
+        <a href="ClientPanel.php">home</a>
+        
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="room" id="room">
+      <br> <br> <br>
+            <h1 class="heading">  Favorite Rooms</h1>
+
+      <div class="swiper room-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              
+              <img src="https://barcelonahacks.com/wp-content/uploads/2017/10/luxury-hotels-barcelona-suite.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Exclusive Room</h3>
+              <a href="#reservation" class="btn">Reserve Room</a>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="reservation" id="reservation">
+
+      <h1 class="heading">Reservation Form</h1>
+   
+      <form action="">
+   
+         <div class="container">
+   
+            <div class="box">
+               <p>Name <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Name">
+            </div>
+   
+            <div class="box">
+               <p>Email <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Email">
+            </div>
+   
+            <div class="box">
+               <p>Reservation Date <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+   
+            <div class="box">
+               <p>End of the Reservation<span>*</span></p>
+               <input type="date" class="input">
+            </div>
+   
+            <div class="box">
+               <p>Number of Attendees <span>*</span></p>
+               <select name="adults" class="input">
+                  <option value="1">1-4</option>
+                  <option value="2">5-10</option>
+                  <option value="3">10-20</option>
+                  <option value="4">20-50</option>
+                  <option value="5">More than 50</option>
+               </select>
+            </div>
+   
+            <div class="box">
+               <p>Reservation Type <span>*</span></p>
+               <select name="child" class="input">
+                  <option value="1">Meeting</option>
+                  <option value="2">Exam</option>
+                  <option value="3">Classroom</option>
+               </select>
+    
+   
+            <div class="box">
+               <p>Reservation Notes <span>*</span></p>
+               <textarea name="" id="" cols="100" rows="3" placeholder="Write your notes..." style="color
+               : gray; "></textarea>
+            </div>
+   
+         </div>
+   
+         <input type="submit" value="Reserve" class="btn" href="#" style="background-color: white; align-items: center; text-align: center; width: 50%; height: 50%; margin-left: 25%; color: #000;" >
+   
+      </form>
+
+    
+    <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +90 5318962154 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> admin@gmail.com</a>
+            <a href="#"> <i class="fas fa-map"></i> Istanbul/Turkey</a>
+         </div>
+
+      </div>
+
+   </section>
+</body>
+</html>

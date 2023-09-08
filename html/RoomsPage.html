@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rooms</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="RoomsPage.css">
+</head>
+<body>
+
+   <header class="header">
+
+      <a href="#" class="logo"> ●Room Reservation </a>
+
+   </header>
+
+   <section class="available">
+
+      <form action="Reservation.html">
+
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>Projector <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">DLP</option>
+               <option value="2">LCD</option>
+               <option value="3">Laser</option>
+               <option value="4">Without Projector</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Speaker System <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="1">Mono</option>
+               <option value="2">Stereo</option>
+               <option value="3">LCR</option>
+               <option value="4">Without Speaker</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Number of Guests?<span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1-4</option>
+               <option value="2">4-10 </option>
+               <option value="3">10-20</option>
+               <option value="4">20-30</option>
+               <option value="5">More than 30</option>
+               
+            </select>
+         </div>
+          <input type="submit" value="check availability" class="btn" style="margin-top: 36px;" href="Reservation.html" >
+      </form>
+
+   </section>
+
+   <section class="room" id="room">
+
+      <h1 class="heading"> Rooms >></h1>
+
+      <div class="swiper room-slider">
+
+         <div class="wrapper">
+            
+            <div class="slide">
+               <div class="image">
+                  
+                  <img src="images/room-1.jpg" alt="">
+                  
+               </div>
+               <div class="content">
+                  <h3>Room1</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+                  <input id="heart" type="checkbox"hidden/>
+                  <label for="heart">❤</label>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  
+               </div>
+            </div>
+
+            <div class="slide">
+               <div class="image">
+                  
+                  <img src="images/room-2.jpg" alt="">
+                 
+               </div>
+               <div class="content">
+                  <h3>Room2</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+                  <input id="heart1" type="checkbox"  hidden/>
+                    <label for="heart1">❤</label>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                 
+               </div>
+            </div>
+            
+            <div class="slide2">
+               <div class="image">
+
+                  <img src="images/room-3.jpg" alt="">
+                  
+               </div>
+               <div class="content">
+                  <h3>Room3</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+                  <input id="heart2" type="checkbox"  hidden/>
+                    <label for="heart2">❤</label>
+                  <div class="stars">
+                     
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+           
+               </div>
+            </div>
+
+            <div class="slide2">
+               <div class="image">
+                  <img src="images/room-4.jpg" alt="">
+                  
+               </div>
+               <div class="content">
+                  <h3>Room4</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+                  <input id="heart3" type="checkbox"  hidden/>
+                    <label for="heart3">❤</label>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                 
+               </div>
+            </div>
+      
+        </div>
+      </div>
+   </section>
+   <section class="review" id="review">
+
+    <div class="swiper review-slide">
+       <div class="wrapper">
+
+          <div class="swiper-slide slide">
+             <h2 class="heading">We are here to hear your comments..</h2>
+             <i class="fas fa-quote-right"></i>
+                <textarea class="text" rows="5" cols="80" placeholder="Send  feedback  regarding  your  experience..." ></textarea>
+             <i class="fas fa-quote-right"></i>
+             <input type="submit" value="Submit" class="btn2">
+             </div>
+        </div>
+    </div>
+ </section>
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +90 5318962154 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> admin@gmail.com</a>
+            <a href="#"> <i class="fas fa-map"></i> Istanbul/Turkey</a>
+         </div>
+
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+   </section>
+</body>
+</html>

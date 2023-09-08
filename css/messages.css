@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background-image: url(images/grad.jpg);
+}
+
+.phone {
+  position: relative;
+  width: 80%; /* Increase the width */
+  height: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.screen {
+  position: relative;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.main {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.message-bubble {
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 80%; /* Increase the maximum width */
+}
+
+.message-bubble.user {
+  background-color: #DFF2FF;
+  color: #333;
+  align-self: flex-start; /* Align user messages on the left */
+  margin-left: 10px;
+}
+
+.message-bubble.admin {
+  background-color: #E7E7E7;
+  color: #333;
+  align-self: flex-end; /* Align admin messages on the right */
+  margin-left: 90%;
+  
+}
+
+.send-message-form {
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  background-color: #957DAD;
+}
+
+.send-message-form textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  resize: none;
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+}
+
+.send-message-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #957DAD;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-row {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+}
+
+.button {
+  width: 50px;
+  height: 10px;
+  background-color: #bbb;
+  margin: 0 5px;
+  border-radius: 5px;
+}

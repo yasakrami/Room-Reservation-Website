@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messages</title>
+  <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+  <div class="phone">
+    <div class="screen">
+      <header>
+        <h1>YAYHotels</h1>
+      </header>
+      <main>
+        <section class="chat-section">
+          <h2>Chat</h2>
+          <div class="chat-container">
+            <div class="message">
+              <div class="message-bubble user">Hello, can you tell me if my reservation is confirmed?</div>
+            </div>
+            <div class="message">
+              <div class="message-bubble admin">Yes, your reservation is confirmed. Let us know if you have any further questions.</div>
+            </div>
+          </div>
+          <form class="send-message-form">
+            <textarea id="message-text" name="message-text" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <div class="button-row">
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

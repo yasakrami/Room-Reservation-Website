@@ -1,0 +1,80 @@
+<?php
+    $con = mysqli_connect("localhost","webadmin@gmail.com","admin1234","login");
+    if (mysqli_connect_errno()){
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        $role = $_POST["role"];
+
+        $query = "INSERT INTO logindata(username, email, password, role) VALUES ('$name', '$email', '$password', '$role')";
+        $result = mysqli_query($con, $query);
+
+        if ($result) {
+            header("Location: login.php");
+            exit();
+        } else {
+            echo "Error: " . mysqli_error($con);
+        }
+    }
+?>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../register.css">
+
+    <title>Registration</title>
+    
+</head>
+<body>
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+
+            <div class="input-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg></span>
+                <input type="text" required name="name">
+                <label></label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                  </svg></span>
+                <input type="email" required name="email">
+                <label></label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                  </svg></span>
+                <input type="password" required name="password">
+                <label></label>
+            </div>
+            <div class="radio-but" >
+                <label for="client">Client </label>
+                <input type="radio" name="role" id="client" value="client" required> 
+                <label for="admin">Admin </label>
+                <input type="radio" name="role" id="admin" value="admin" required>
+            </div>
+            <div class="remember-forgot">
+                <label> <input type="checkbox" required>I agree terms & conditions</label>
+                
+            </div>
+            <button type="submit" class="btn" href="login.php">Register</button>
+            <div class="login-register">
+                <p>Already have an account?<a href="login.php" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

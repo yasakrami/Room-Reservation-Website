@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rooms</title>
+    <link rel="stylesheet" href="AdminRooms.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rooms>></h1>
+    </header>
+    <main>
+        <div class="swiper room-slider">
+  
+           <div class="swiper-wrapper">
+              
+              <div class="slide">
+                 <div class="image">
+                    <img src="images/room-1.jpg" alt="">
+                 </div>
+                 <div class="content">
+                    <h3>Room1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+                 </div>
+              </div>
+  
+              <div class="slide">
+                 <div class="image">
+                    
+                    <img src="images/room-2.jpg" alt="">
+                   
+                 </div>
+                 <div class="content">
+                    <h3>Room2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+                 </div>
+              </div>
+              
+              <div class="slide2">
+                 <div class="image">
+  
+                    <img src="images/room-4.jpg" alt="">
+                    
+                 </div>
+                 <div class="content">
+                    <h3>Room3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>>
+                    
+                 </div>
+              
+              </div>
+          </div>
+        </div>
+     </section>
+
+      <section class="status">
+        <h2>Rooms Status</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Room No</th>
+              <th>Floor</th>
+              <th>Capacity</th>
+              <th>Utilities</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>1st</td>
+              <td>2</td>
+              <td>Projector</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>1st</td>
+              <td>4</td>
+              <td>Projector, Speaker System</td>
+              <td>Unavailable</td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>1st</td>
+              <td>5</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>2nd</td>
+              <td>30</td>
+              <td>Projector, Speaker System</td>
+              <td>Unavailable</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>12</td>
+              <td>Projector, Speaker System</td>
+              <td>aavailable</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>3rd</td>
+              <td>3</td>
+              <td>Projector, Speaker System</td>
+              <td>available</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="filter">
+        <h2 >Filter Rooms</h2>
+        <form>
+          <label for="utilities">Select utilities:</label>
+          <select id="utilities" name="utilities">
+            <option value="all">All</option>
+            <option value="projector">Projector</option>
+            <option value="speaker">Speaker System</option>
+           
+          </select>
+          <button type="submit">Filter</button>
+        </form>
+      </section>
+      <section class="change">
+        <h2>Change Room Status</h2>
+        <form>
+          <label for="room-number">Enter room number:</label>
+          <input type="text" id="room-number" name="room-number">
+          <label for="status">Select status:</label>
+          <select id="status" name="status">
+            <option value="available">Available</option>
+            <option value="unavailable">Unavailable</option>
+          </select>
+          <button type="submit">Update Status</button>
+        </form>
+      </section>
+      <section>
+        <h2>Add New Room</h2>
+        <form>
+          <label for="new-room-number">Room number:</label>
+          <input type="text" id="new-room-number" name="new-room-number">
+          <label for="new-room-floor">Floor:</label>
+          <input type="text" id="new-room-floor" name="new-room-floor">
+          <label for="new-room-capacity">Capacity:</label>
+          <input type="text" id="new-room-capacity" name="new-room-capacity">
+          <label for="new-room-utilities">Utilities:</label>
+          <input type="text" id="new-room-utilities" name="new-room-utilities">
+          <button type="submit">Add Room</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
